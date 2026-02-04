@@ -6,20 +6,20 @@ node_modules/
 .env.local
 .env.*.local
 
-# Uploaded files (keep uploads folder via .gitkeep)
-backend/uploads/*
-!backend/uploads/.gitkeep
-
 # Logs
 logs/
 *.log
 npm-debug.log*
 
+# Uploads (user-uploaded files)
+backend/uploads/
+uploads/
+
 # OS
 .DS_Store
 Thumbs.db
 
-# IDE
+# IDE / Editor
 .idea/
 .vscode/
 *.swp
@@ -28,8 +28,9 @@ Thumbs.db
 # Build / output
 dist/
 build/
-coverage/
+*.tsbuildinfo
 
-# Optional
-*.tgz
+# Misc
 .cache/
+coverage/
+*.pid
